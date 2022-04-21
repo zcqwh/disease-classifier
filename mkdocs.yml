@@ -1,0 +1,11 @@
+site_name: disease-classifier
+site_description: A disease classifier based on iPAC images.
+site_author: Chenqi Zhang
+
+theme: readthedocs
+
+
+repo_url: https://github.com/zcqwh/disease-classifier
+
+pages:
+- Home: index.md

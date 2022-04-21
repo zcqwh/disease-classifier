@@ -1,0 +1,48 @@
+name: disease-classifier
+display_name: Disease classifier
+contributions:
+  commands:
+    - id: disease-classifier.get_reader
+      python_name: disease_classifier._reader:napari_get_reader
+      title: Open data with Disease classifier
+    - id: disease-classifier.write_multiple
+      python_name: disease_classifier._writer:write_multiple
+      title: Save multi-layer data with Disease classifier
+    - id: disease-classifier.write_single_image
+      python_name: disease_classifier._writer:write_single_image
+      title: Save image data with Disease classifier
+    - id: disease-classifier.make_sample_data
+      python_name: disease_classifier._sample_data:make_sample_data
+      title: Load sample data from Disease classifier 
+    - id: disease-classifier.make_qwidget
+      python_name: disease_classifier._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: disease-classifier.make_magic_widget
+      python_name: disease_classifier._widget:example_magic_widget
+      title: Make example magic widget
+    - id: disease-classifier.make_func_widget
+      python_name: disease_classifier._widget:example_function_widget
+      title: Make example function widget 
+  readers:
+    - command: disease-classifier.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy'] 
+  writers:
+    - command: disease-classifier.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: disease-classifier.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy'] 
+  sample_data:
+    - command: disease-classifier.make_sample_data
+      display_name: Disease classifier
+      key: unique_id.1 
+  widgets:
+    - command: disease-classifier.make_qwidget
+      display_name: Example QWidget
+    - command: disease-classifier.make_magic_widget
+      display_name: Example Magic Widget
+    - command: disease-classifier.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget 
