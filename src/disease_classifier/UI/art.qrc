@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icon/aqua.png</file>
+    <file>icon/black.png</file>
+    <file>icon/delete.png</file>
+    <file>icon/eye.png</file>
+    <file>icon/green.png</file>
+    <file>icon/red.png</file>
+    <file>icon/visibility_off.png</file>
+    <file>icon/white.png</file>
+  </qresource>
+</RCC>
