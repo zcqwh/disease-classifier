@@ -8,7 +8,8 @@ Replace code below according to your needs.
 """
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
+from qtpy import QtCore, QtGui, QtWidgets, uic
+from .UI import art_rc
 import os,sys,h5py,pickle,shutil
 import cv2
 import time
@@ -20,6 +21,7 @@ from statsmodels.nonparametric.kernel_density import KDEMultivariate
 
 from . import aid_cv2_dnn
 from .background_program import bin_2_rtdc
+
 
 dir_root = os.path.dirname(__file__)#ask the module for its origin
 

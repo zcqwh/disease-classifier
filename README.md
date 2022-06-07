@@ -7,19 +7,9 @@
 [![codecov](https://codecov.io/gh/zcqwh/disease-classifier/branch/main/graph/badge.svg)](https://codecov.io/gh/zcqwh/disease-classifier)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/disease-classifier)](https://napari-hub.org/plugins/disease-classifier)
 
-A disease classifier based on iPAC images.
+A napari plugin for disease classification based on iPAC images.
 
-----------------------------------
 
-This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
-
-<!--
-Don't miss the full getting started guide to set up your new package:
-https://github.com/napari/cookiecutter-napari-plugin#getting-started
-
-and review the napari docs for plugin developers:
-https://napari.org/plugins/stable/index.html
--->
 
 ## Installation
 
@@ -32,6 +22,19 @@ You can install `disease-classifier` via [pip]:
 To install latest development version :
 
     pip install git+https://github.com/zcqwh/disease-classifier.git
+
+## Introduction
+#### Load data (.rtdc or .bin)
+Drag and drop the data in .rtdc or .bin into the files table.
+#### Choose model
+Choose the model folder including CNN and RF/PLDA.
+#### Classification
+Click classify button.
+#### Preview images
+Click the eye button to preview images.
+
+* Raw data
+* Classification result
 
 
 ## Contributing
@@ -47,6 +50,18 @@ Distributed under the terms of the [BSD-3] license,
 ## Issues
 
 If you encounter any problems, please [file an issue] along with a detailed description.
+
+----------------------------------
+
+This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
+
+<!--
+Don't miss the full getting started guide to set up your new package:
+https://github.com/napari/cookiecutter-napari-plugin#getting-started
+
+and review the napari docs for plugin developers:
+https://napari.org/plugins/stable/index.html
+-->
 
 [napari]: https://github.com/napari/napari
 [Cookiecutter]: https://github.com/audreyr/cookiecutter
@@ -65,3 +80,4 @@ If you encounter any problems, please [file an issue] along with a detailed desc
 [tox]: https://tox.readthedocs.io/en/latest/
 [pip]: https://pypi.org/project/pip/
 [PyPI]: https://pypi.org/
+

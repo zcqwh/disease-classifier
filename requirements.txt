@@ -1,0 +1,10 @@
+CustomWidget>=0.1.0
+h5py>=3.6.0
+napari>=0.4.15
+numpy>=1.22.4
+opencv_contrib_python_headless>=4.5.5.64
+pandas>=1.4.2
+PyQt5>=5.15.6
+pytranskit>=0.2.3
+QtPy>=2.1.0
+statsmodels>=0.13.2

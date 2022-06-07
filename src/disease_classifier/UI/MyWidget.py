@@ -1,8 +1,9 @@
 
-from PyQt5 import QtWidgets,QtCore
+#from PyQt5 import QtWidgets,QtCore
+from qtpy import QtWidgets,QtCore
 
 class MyTable(QtWidgets.QTableWidget):
-    dropped = QtCore.pyqtSignal(list) 
+    dropped = QtCore.Signal(list) 
     def __init__(self, *args, **kwargs):
         super(MyTable, self).__init__( *args, **kwargs)
         self.setAcceptDrops(True)
@@ -46,7 +47,7 @@ class MyTable(QtWidgets.QTableWidget):
 
 # =============================================================================
 # class MyLineEdit(QtWidgets.QLineEdit):
-#     dropped = QtCore.pyqtSignal(str) 
+#     dropped = QtCore.Signal(str) 
 #     def __init__( self, *args, **kwargs):
 #         super(MyLineEdit, self).__init__(*args, **kwargs)
 #         self.setAcceptDrops(True)
@@ -81,7 +82,7 @@ class MyTable(QtWidgets.QTableWidget):
 
         
 class MyLineEdit(QtWidgets.QLineEdit):
-    dropped = QtCore.pyqtSignal(str) 
+    dropped = QtCore.Signal(str) 
     def __init__( self, *args, **kwargs):
         super(MyLineEdit, self).__init__(*args, **kwargs)
         self.setDragEnabled(True)

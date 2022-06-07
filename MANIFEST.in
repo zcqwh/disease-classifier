@@ -1,5 +1,7 @@
 include LICENSE
 include README.md
 
+recursive-include * *.ui * *.qrc
+
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
