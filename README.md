@@ -25,16 +25,27 @@ To install latest development version :
 
 ## Introduction
 #### Load data (.rtdc or .bin)
-Drag and drop the data in .rtdc or .bin into the files table.
-#### Choose model
-Choose the model folder including CNN and RF/PLDA.
-#### Classification
-Click classify button.
-#### Preview images
-Click the eye button to preview images.
+* Drag and drop the data in .rtdc or .bin into the files table.
+* Click eye button to preview images.
+![](https://github.com/zcqwh/disease-classifier/blob/main/Tutorial/Gif/01_Load_preview.gif?raw=true)
 
-* Raw data
-* Classification result
+
+#### Choose model and classify
+
+* Choose the model folder including CNN and RF/PLDA.
+* Check the data.
+* Click classify.
+![](https://github.com/zcqwh/disease-classifier/blob/main/Tutorial/Gif/02_model_classify.gif?raw=true)
+
+#### Preview classification results
+* Click the eye button to preview the result.
+* Click the header to show all.
+![](https://github.com/zcqwh/disease-classifier/blob/main/Tutorial/Gif/03_preview_result.gif?raw=true)
+
+
+#### Save results
+* Click “Add classification to .rtdc file” button to save results.
+![](https://github.com/zcqwh/disease-classifier/blob/main/Tutorial/Gif/04_save.gif?raw=true)
 
 
 ## Contributing
